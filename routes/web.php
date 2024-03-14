@@ -15,5 +15,14 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     $title = "un messaggio dinamico";
-    return view('home', ['title'=> $title]);
+    $page_title = Config::get("hello.page_title");
+    $wellcome_page = Config::get("hello.wellcome_page");
+    return view(
+        'home',
+         [
+            'title'=> $title,
+            'page_title'=> $page_title,
+            'wellcome_page'=> $wellcome_page
+        ]
+    );
 });
