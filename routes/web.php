@@ -14,5 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('home');
+    $title = "un messaggio dinamico";
+    return view('home', ['title'=> $title]);
 });

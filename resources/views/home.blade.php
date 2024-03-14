@@ -8,5 +8,6 @@
 <body>
     <h1 >LARAVEL</h1>
     <h2>Hello word</h2>
+    <h5>{{ $title }}</h5>
 </body>
 </html>
