@@ -26,3 +26,6 @@ Route::get('/', function () {
         ]
     );
 });
+Route::get('/descrizione', function () {
+    return view('descrizione');
+});

@@ -10,6 +10,7 @@
     <h2>{{ $wellcome_page }}</h2>
     <h3>{{ $page_title }}</h3>
     <h5>{{ $title }}</h5>
+    <a href="{{ url('/descrizione') }}">descrizione del progetto</a>
 
 </body>
 </html>
